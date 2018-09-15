@@ -2,13 +2,13 @@ Today, we will be making a script that can determine the value of a die based on
 
 So let's get to work.
 
-We will start off by create a script called GameDie.
+We will start off by create a script called GameDice.
 
 In this script, we will add an int variable called dieValue.  This will be used to store the current value of the die.
 
 Next, we are going to create a struct in the same file.  We'll call this struct FacingData.  We will give it two variables; an int for a face value and a Vector3 for the direction.  The direction will be the upward direction of the die when this face value is on top.  We will use this to determine the value of the die.  We are also going to put above the struct [Serializable].  This will make the struct appear in the inspector.
 
-Now, we make a list of FacingData in the GameDie class, and call it facing.
+Now, we make a list of FacingData in the GameDice class, and call it facing.
 
 After that, we go to make a method called DetermineFaceValue.  In this method, we will need three variables; a float called max, which we will set to -1, and an int called match, which we will also set to 0, and finally a float called dotValue.  We don't need to give dotValue a value right now.
 
