@@ -23,3 +23,6 @@ Now to test this out, we have a call to DetermineFaceValue in Update and go back
 Once all the faces are set, we hit play and test it out.  We rotate the die to see if the correct value is set based on the up side.  
 
 And as you can see, it works.
+
+
+Dice models: https://assetstore.unity.com/packages/3d/props/dice-26670
