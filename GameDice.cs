@@ -224,9 +224,13 @@ public class GameDie : MonoBehaviour
     /// </summary>
     private void Update()
     {
-		//trueUp = transform.rotation * transform.up;
-			//Vector3.Lerp(  transform.InverseTransformDirection(Vector3.up),  transform.TransformDirection(Vector3.up), 0.5f).normalized;
-			//transform.rotation * transform.up;
+		DetermineFaceValue();
+    }
+		/// <summary>
+	/// The DetermineFaceValue
+	/// </summary>
+	public void DetermineFaceValue()
+	{
 		float max = -1f;
 		int match = 0;
 		for (int i = 0; i < facings.Count; i++)
@@ -237,13 +241,12 @@ public class GameDie : MonoBehaviour
 			{
 				max = dotValue;
 				//upSide = i + 1;
-				match = facings[i].faceValue;
+				match = facings [i].faceValue;
 				//break;
 			}
 		}
 		dieValue = match;
-    }
-
+	}
     #endregion
 
     /// <summary>
